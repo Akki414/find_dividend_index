@@ -1,0 +1,10 @@
+def find_dividend_index(A, D, Q, R):
+    for index, a in enumerate(A):
+        if a == D * Q + R:
+            return index
+    return -1
+A = [5, 6, 7, 9, 10]
+D = 2
+Q = 3
+R = 1
+print(find_dividend_index(A, D, Q, R))
